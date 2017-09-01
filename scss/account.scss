@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto';
+	background-color: $background;
+
+	.header {
+		background-color: $box-color;
+		color: $text-color;
+		height: 120px;
+
+		.user {
+			padding: 0;
+			margin: 0;
+			display: inline-block;
+
+			p {
+				display: inline-block;
+				font-size: rem-calc(25);
+				padding: rem-calc(20 0);
+			}
+		}
+
+		.logo-2 {
+			width: rem-calc(100);
+			height: auto;
+		}
+
+		ul {
+			height: 120px;
+
+			li {
+				width: rem-calc(100);
+				line-height: 120px;
+
+				&:hover {
+					background-color: $button-text-color;
+				}
+
+				a {
+					color: $text-color;
+					text-transform: uppercase;
+
+					i {
+						font-size: rem-calc(35);
+						padding-bottom: rem-calc(10);
+					}
+				}
+			}
+		}
+
+		.icons {
+			font-size: rem-calc(30);
+		}
+	}
+
+	.main {
+		width: 90vw;
+		margin: 0 auto;
+
+		.heading {
+			h2 {
+				display: inline-block;
+			}
+		}
+
+		.chart {
+			height: rem-calc(350);
+			background-color: $text-color;
+		}
+
+		.products {
+			padding-top: rem-calc(30);
+			padding-bottom: rem-calc(30);
+		}
+
+		.history {
+			padding-top: rem-calc(30);
+			padding-bottom: rem-calc(30);
+			height: rem-calc(400);
+			overflow-y: scroll;
+
+			.histElem {
+				padding: rem-calc(15);
+				background-color: $text-color;
+			}
+		}
+
+	}
+}

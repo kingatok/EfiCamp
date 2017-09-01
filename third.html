@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EfiCamp</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="row">
+				<div class="small-5 columns">
+					<img class="logo-2" src="./assets/ef_log.png" alt="logo">
+					<img src="http://via.placeholder.com/100x100">
+					<div class="user">
+						<p class="small-12">Jan Kowalski</p>
+						<i class="fa fa-envelope-o"></i>
+						<i class="fa fa-cog"></i>
+					</div>
+				</div>
+				<div class="small-5 columns">
+					<ul class="menu text-center">
+						<li><a href="#"><i class="fa fa-home"></i><br>Home</a></li>
+						<li><a href="#"><i class="fa fa-line-chart"></i><br>Analyse</a></li>
+						<li><a href="#"><i class="fa fa-calendar-o"></i><br>Plan</a></li>
+						<li><a href="#"><i class="fa fa-bar-chart"></i><br>Earn</a></li>
+					</ul>
+				</div>
+				<div class="small-2 columns">
+					<div class="icons">
+						<i class="fa fa-search"></i>
+						<i class="fa fa-power-off"></i>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="app-window">
+			<main>
+				<form>
+					<div class="row">
+						<div class="small-12">
+							<select name="select">
+						
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-12">
+							<a href="#"><i class="fa fa-plus-square"></i></a>
+							<p class="text-center">Add the account from which you draw funds</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="">Type</label>
+						</div>	
+						<div class="small-9 columns">
+								<fieldset id="type">
+									<label>
+										<input type="radio" name="country" class="hide">
+										<div class="icon-country"><i class="fa fa-university"></i></div>
+										<span>Country</span>
+									</label>
+									<label>
+										<input type="radio" name="own" class="hide">
+										<div class="icon-own"><i class="fa fa-male"></i></div>
+										<span>Own</span>
+									</label>
+									<label>
+										<input type="radio" name="currencies" class="hide">
+										<div class="icon-currencies"><i class="fa fa-eur"></i></div>
+										<span>Currencies</span>
+									</label>
+									<label>
+										<input type="radio" name="zus" class="hide">
+										<div class="icon-zus"><i class="fa fa-car"></i></div>
+										<span>ZUS</span>
+									</label>
+									<label>
+										<input type="radio" name="tax" class="hide">
+										<div class="icon-tax"><i class="fa fa-money"></i></div>
+										<span>TAX</span>
+									</label>
+									<label>
+										<input type="radio" name="gsm" class="hide">
+										<div class="icon-gsm"><i class="fa fa-mobile"></i></div>
+										<span>GSM</span>
+									</label>
+								</fieldset>
+						</div>			
+					</div>
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="">Recipient</label>
+						</div>	
+						<div class="small-9 columns">
+							<input type="search" name="search">
+						</div>			
+					</div>
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="where">Where</label>
+						</div>	
+						<div class="small-9 columns">
+							<fieldset id="where">
+								<input id="account" type="radio" name="">
+								<label for="account">Account</label>
+								<input id="facebook" type="radio" name="">
+								<label for="facebook">Facebook</label>
+								<input id="phone" type="radio" name="">
+								<label for="phone">Phone</label>
+								<input id="email" type="radio" name="">
+								<label for="email">E-mail</label>
+								<input id="byphone" type="radio" name="">
+								<label for="byphone">By phone</label>
+							</fieldset>
+						</div>			
+					</div>
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="number">Number</label>
+						</div>	
+						<div class="small-9 columns">
+							<input type="text" name="number">
+						</div>			
+					</div>
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="sum">Sum</label>
+						</div>	
+						<div class="small-9 columns">
+							<div class="row">
+								<div class="small-5 columns">
+									<input type="text" name="Sum">
+								</div>
+								<div class="small-3 columns end">
+									<select></select>
+								</div>
+							</div>
+						</div>			
+					</div>
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="when">When</label>
+						</div>	
+						<div class="small-9 columns">
+							<input type="calendar" name="">
+						</div>			
+					</div>
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="title">Title</label>
+						</div>	
+						<div class="small-9 columns">
+							<input type="text" name="title">
+						</div>			
+					</div>
+					<div class="row">
+						<div class="small-3 columns">
+							<label for="type-of-transfer">Type of transfer</label>
+						</div>	
+						<div class="small-9 columns">
+							<fieldset id="type-of-transfer">
+								<input id="normal" type="radio" name="">
+								<label for="normal">Normally about 2 days</label>
+								<input id="eliksir" type="radio" name="">
+								<label for="eliksir">Express Eliksir 15 min</label>
+								<input id="sorbnet" type="radio" name="">
+								<label for="sorbnet">Sorbnet 2 hours</label>
+							</fieldset>
+						</div>			
+					</div>
+					<div class="row">
+						<div class="small-12">
+							<button class="button">Continue</button>
+						</div>
+					</div>
+				</form>
+			</main>
+		</div>
+	</div>
+</body>
+</html>

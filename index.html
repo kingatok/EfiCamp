@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>EfiCamp</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body>
+		<div class="login-container">
+			<div class="row">
+				<div class="small-2 small-offset-2 columns">
+					<img class="logo" src="./assets/ef_log.png" alt="logo">
+				</div>
+				<div class="small-6 columns end">
+					<div class="login-box">
+						<h2 class="text-center">Login</h2>
+						<p class="text-center">Aby zaimportować dane zaloguj się do swojego banku</p>
+						<div class="avatar">
+							<img src="" alt="Your photo">
+						</div>
+						<form id="login-form" action="second.html" method="POST">
+							<div class="login-id">
+								<div class="input-group">
+									<div class="text-center input-group-field">127633223</div>
+									<div class="input-group-button">
+										<i class="fa fa-times-circle" aria-hidden="true"></i>
+									</div>
+								</div>
+							</div>
+							<div class="login-password">
+								<div class="input-group">
+								<input id ="password" class="input-group-field" type="text" name="password">
+								<div class="input-group-button">
+									<i class="fa fa-keyboard-o" aria-hidden="true"></i>
+								</div>
+							</div>
+							</div>
+							<div class="error"></div>
+							<div class="row">
+								<div class="login-buttons">
+									<button class="small-4 small-offset-2 columns"z type="submit">select other</button>
+									<button id="submitButton"  class="small-3 columns end" type="submit">go</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<footer>
+						<ul class="menu">
+							<li><a href="#">security</a></li>
+							<li><a href="#">login in</a></li>
+							<li><a href="#">contact</a></li>
+						</ul>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/what-input/dist/what-input.js"></script>
+		<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

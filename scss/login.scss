@@ -1,0 +1,109 @@
+.login-container {
+	background: url("../assets/bg.jpeg") no-repeat center 100%;
+	background-size: cover;
+	color: $text-color;
+	padding-top: 10vh;
+
+	.login-box {
+		width: 35vw;
+		background-color: $box-color;
+		padding: rem-calc(25 35 110 35);
+
+		.avatar {
+			background-color: $text-color;
+			border-radius: 50%;
+			width: rem-calc(94);
+			height: rem-calc(94);
+			margin: rem-calc(5) auto;
+			margin-top: rem-calc(30);
+			margin-bottom: rem-calc(30);
+			position: relative;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		form {
+			.login-id {
+				i {
+					line-height: rem-calc(25);
+					font-size: rem-calc(20);
+				}
+			}
+		}
+
+		form {
+			.login-password {
+				i {
+					line-height: rem-calc(40);
+					font-size: rem-calc(20);
+					margin-left: rem-calc(5);
+				}
+			}
+		}
+
+		.error {
+			position: absolute;
+			background-color: $tooltip-color;
+			color: white;
+			height: rem-calc(25);
+			width: 95%;
+			border-radius: rem-calc(3);
+			visibility: hidden;
+			&:before {
+				content: "";
+				position: absolute;
+				border-left: rem-calc(12) solid transparent;
+				border-right: rem-calc(12) solid transparent;
+				border-bottom: rem-calc(20) solid $tooltip-color;
+				left: rem-calc(10);
+				top: rem-calc(-20);
+    		}
+		}
+
+		button {
+			text-align: center;
+			text-transform: uppercase;
+			height: rem-calc(35);
+			&:first-child {
+				color: $text-color;
+				font-size: rem-calc(15);
+				padding: rem-calc(5);
+			}
+			&:nth-child(2) {
+				background-color: $text-color;
+				border-radius: rem-calc(5);
+				font-size: rem-calc(15);
+				padding: rem-calc(5 40);
+			}
+		}
+
+	}
+
+	footer li a {
+		color: $text-color;
+		text-transform: uppercase;
+		font-size: rem-calc(11);
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

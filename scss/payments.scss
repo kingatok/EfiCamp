@@ -1,0 +1,30 @@
+.container {
+	background-color: $background;
+
+	.app-window {
+		background-color: $text-color;
+		width: 95vw;
+		margin: 0 auto;
+
+		#type {
+			label {
+				display: inline-block;
+
+				input[type="radio"]:checked + div {
+					color: red;
+
+				}
+
+				div[class^="icon"] {
+					background-color: $background;
+					width: 60px;
+					height: 60px;
+
+					i {
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+}

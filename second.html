@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EfiCamp</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<div class="row">
+				<div class="small-5 columns">
+					<img class="logo-2" src="./assets/ef_log.png" alt="logo">
+					<img src="http://via.placeholder.com/100x100">
+					<div class="user">
+						<p class="small-12">Jan Kowalski</p>
+						<i class="fa fa-envelope-o"></i>
+						<i class="fa fa-cog"></i>
+					</div>
+				</div>
+				<div class="small-5 columns">
+					<ul class="menu text-center">
+						<li><a href="#"><i class="fa fa-home"></i><br>Home</a></li>
+						<li><a href="#"><i class="fa fa-line-chart"></i><br>Analyse</a></li>
+						<li><a href="#"><i class="fa fa-calendar-o"></i><br>Plan</a></li>
+						<li><a href="#"><i class="fa fa-bar-chart"></i><br>Earn</a></li>
+					</ul>
+				</div>
+				<div class="small-2 columns">
+					<div class="icons">
+						<i class="fa fa-search"></i>
+						<i class="fa fa-power-off"></i>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<div class="heading">
+				<div class="row">
+					<div class="small-12 columns">
+						<h2 class="h1">Finance life stream</h2>
+						<div class="float-right">
+							<button>Add</button>
+							<a href="#" class="button">Bank</a>
+							<a href="#" class="button">Payment</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-3 columns">
+						<p>Balance</p>
+						<div class="balance">7200,34<span>PLN</span></div>
+					</div>
+					<div class="small-3 columns">
+						<p>Available funds</p>
+						<div class="availableFunds">7200,34<span>PLN</span></div>
+					</div>
+					<div class="small-3 columns">
+						<p>Scheduled payments</p>
+						<div class="scheduledPayments">2200,34<span>PLN</span><span class="button">Fast pay</span></div>
+					</div>	
+					<div class="small-3 columns">
+						<div class="analysis">
+							<p>Accounts analysis</p>
+							<div class="switch large">
+								<input class="switch-input" id="yes-no" type="checkbox" name="exampleSwitch">
+								<label class="switch-paddle" for="yes-no">
+									<span class="switch-active" aria-hidden="true">On</span>
+									<span class="switch-inactive" aria-hidden="true">Off</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="chart">
+						
+				</div>
+				<div class="row">
+					<div class="small-6 columns">
+						<div class="products">
+							<h6>Products</h6>
+								
+						</div>
+					</div>
+					<div class="small-6 columns">
+						<div class="history">
+							<h6>History</h6>
+								
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/what-input/dist/what-input.js"></script>
+	<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+	<script src="js/account.js"></script>
+</body>
+</html>
